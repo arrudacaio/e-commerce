@@ -1,0 +1,29 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "Implementation of an e-commerce to understand the main problems with this type of app. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arrudacaio/e-commerce.git"
+  },
+  "keywords": [
+    "e-commerce"
+  ],
+  "author": "Caio Arruda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arrudacaio/e-commerce/issues"
+  },
+  "homepage": "https://github.com/arrudacaio/e-commerce#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "kafkajs": "^1.15.0",
+    "moment": "^2.29.1"
+  }
+}
