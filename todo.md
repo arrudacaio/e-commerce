@@ -1,3 +1,3 @@
 ### Todo list 
-- [ ] Adds typescript in project
+- [x] Adds typescript in project
 - [ ] Adds docker image to project
