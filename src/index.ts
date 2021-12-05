@@ -1,10 +1,17 @@
-import express from 'express';
+require('dotenv').config()
 
-const app = express();
-app.use(express.json());
+import express from 'express'
+import cors from 'cors'
+
+const app = express()
+const PORT = process.env.PORT || 3000
+
+
+app.use(cors())
+app.use(express.json())
 
 interface RequestBody {
-  name: string;
+  name: string
 }
 
 app.post('/', (request, response) => {
@@ -12,7 +19,7 @@ app.post('/', (request, response) => {
 
   return response.send({
     message: `Hello ${user.name}`,
-  });
-});
+  })
+})
 
-app.listen(3000, () => console.log('Listening 3000'));
+app.listen(PORT, () => console.log(`Listening ${PORT}`));
